@@ -7,6 +7,7 @@ import {
   PageHeaderHeading,
 } from "@/components/ui/page-header";
 import Image from "next/image";
+import DemoPage from "./todo/page";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
           <Button>Get started</Button>
           <Button variant={"secondary"}>Browse components</Button>
         </PageActions>
+        <DemoPage />
       </PageHeader>
     </main>
   );
