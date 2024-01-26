@@ -4,10 +4,10 @@ import { Metadata } from "next";
 import Image from "next/image";
 import { z } from "zod";
 
-import { columns } from "@/app/todo/columns"
+import { columns } from "@/app/todo/columns";
 import { DataTable } from "@/app/todo/data-table";
 import { UserNav } from "@/app/todo/UserNav";
-import { taskSchema } from "@/app/data/schema"
+import { taskSchema } from "@/app/data/schema";
 
 export const metadata: Metadata = {
   title: "Tasks",
@@ -17,7 +17,6 @@ export const metadata: Metadata = {
 // Simulate a database read for tasks.
 async function getTasks() {
   const data = await fs.readFile(
-    // path.join(process.cwd(), "app/examples/tasks/data/tasks.json")
     path.join(process.cwd(), "app/data/tasks.json")
   );
 
@@ -65,6 +64,7 @@ export default async function TaskPage() {
   );
 }
 
+// Previous version of this file:
 // import { Task, columns } from "@/app/todo/columns";
 // import { DataTable } from "./data-table";
 

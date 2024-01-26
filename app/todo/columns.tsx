@@ -9,18 +9,6 @@ import { DataTable } from "./data-table";
 import { DataTableRowActions } from "./data-table-actions";
 import { DataTableColumnHeader } from "./data-table-header";
 
-// This type is used to define the shape of our data.
-// You can use a Zod schema here if you want.
-
-// Old way:
-// export type Task = {
-//   id: string;
-//   priority: string;
-//   status: "In Progress" | "Backlog" | "Completed" | "Canceled";
-//   title: string;
-//   task: string;
-// };
-
 export const columns: ColumnDef<Task>[] = [
   {
     id: "select",
@@ -132,3 +120,37 @@ export const columns: ColumnDef<Task>[] = [
     cell: ({ row }) => <DataTableRowActions row={row} />,
   },
 ];
+
+// Previous version:
+// "use client";
+
+// import { ColumnDef } from "@tanstack/react-table";
+
+// // This type is used to define the shape of our data.
+// // You can use a Zod schema here if you want.
+// export type Todo = {
+//   id: string;
+//   priority: string;
+//   status: "In Progress" | "Backlog" | "Completed" | "Canceled";
+//   title: string;
+//   task: string;
+// };
+
+// export const columns: ColumnDef<Todo>[] = [
+//   {
+//     accessorKey: "task",
+//     header: "Task",
+//   },
+//   {
+//     accessorKey: "title",
+//     header: "Title",
+//   },
+//   {
+//     accessorKey: "status",
+//     header: "Status",
+//   },
+//   {
+//     accessorKey: "priority",
+//     header: "Priority",
+//   },
+// ];
