@@ -52,11 +52,11 @@ export default function IndexPage() {
   return (
     <div className="container relative">
       <PageHeader>
-        <Announcement />
-        <PageHeaderHeading>Build your component library</PageHeaderHeading>
+        {/* <Announcement /> */}
+        <PageHeaderHeading>My Tasks</PageHeaderHeading>
         <PageHeaderDescription>
-          Beautifully designed components that you can copy and paste into your
-          apps. Accessible. Customizable. Open Source.
+          Here are my tasks to complete and do for this month. Filter through
+          the tasks by clicking on the buttons below.
         </PageHeaderDescription>
         <PageActions>
           <Link href="/docs" className={cn(buttonVariants())}>
@@ -73,7 +73,7 @@ export default function IndexPage() {
           </Link>
         </PageActions>
       </PageHeader>
-      <section className="overflow-hidden rounded-lg border bg-background shadow-md md:hidden md:shadow-xl">
+      {/* <section className="overflow-hidden rounded-lg border bg-background shadow-md md:hidden md:shadow-xl">
         <Image
           src="/mail-dark.png"
           width={1280}
@@ -88,8 +88,8 @@ export default function IndexPage() {
           alt="Mail"
           className="block dark:hidden"
         />
-      </section>
-      <section className="hidden md:block">
+      </section> */}
+      <section className="flex flex-col">
         <div className="overflow-hidden rounded-lg border bg-background shadow-lg">
           <TaskPage />
         </div>
