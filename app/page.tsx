@@ -7,7 +7,7 @@ import {
   PageHeaderHeading,
 } from "@/components/ui/page-header";
 import Image from "next/image";
-import DemoPage from "./todo/page";
+import DemoPage from "./tasks/page";
 
 export default function Home() {
   return (
@@ -30,4 +30,3 @@ export default function Home() {
     </main>
   );
 }
-

@@ -4,10 +4,10 @@ import { Metadata } from "next";
 import Image from "next/image";
 import { z } from "zod";
 
-import { columns } from "@/app/todo/columns";
-import { DataTable } from "@/app/todo/data-table";
-import { UserNav } from "@/app/todo/UserNav";
-import { taskSchema } from "@/app/data/schema";
+import { columns } from "@/app/tasks/columns";
+import { DataTable } from "@/app/tasks/data-table";
+import { UserNav } from "@/app/tasks/UserNav";
+import { taskSchema } from "@/app/tasks/data/schema";
 
 export const metadata: Metadata = {
   title: "Tasks",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 // Simulate a database read for tasks.
 async function getTasks() {
   const data = await fs.readFile(
-    path.join(process.cwd(), "app/data/tasks.json")
+    path.join(process.cwd(), "app/tasks/data/tasks.json")
   );
 
   const tasks = JSON.parse(data.toString());
@@ -32,14 +32,14 @@ export default async function TaskPage() {
     <>
       <div className="md:hidden">
         <Image
-          src="/public/tasks-light.png"
+          src="/tasks-light.png"
           width={1280}
           height={998}
           alt="Playground"
           className="block dark:hidden"
         />
         <Image
-          src="/public/tasks-dark.png"
+          src="/tasks-dark.png"
           width={1280}
           height={998}
           alt="Playground"
