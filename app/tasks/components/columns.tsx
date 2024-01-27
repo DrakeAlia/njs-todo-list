@@ -4,7 +4,7 @@ import { ColumnDef } from "@tanstack/react-table";
 import { Badge } from "@/components/ui/badge";
 import { Checkbox } from "@/components/ui/checkbox";
 import { labels, priorities, statuses } from "@/app/tasks/data/data";
-import { Task } from "./data/schema";
+import { Task } from "../data/schema";
 import { DataTableRowActions } from "./data-table-actions";
 import { DataTableColumnHeader } from "./data-table-header";
 

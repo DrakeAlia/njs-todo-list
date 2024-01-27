@@ -4,9 +4,9 @@ import { Metadata } from "next";
 import Image from "next/image";
 import { z } from "zod";
 
-import { columns } from "@/app/tasks/columns";
-import { DataTable } from "@/app/tasks/data-table";
-import { UserNav } from "@/app/tasks/UserNav";
+import { columns } from "@/app/tasks/components/columns";
+import { DataTable } from "@/app/tasks/components/data-table";
+import { UserNav } from "@/app/tasks/components/tasks-avatar-nav";
 import { taskSchema } from "@/app/tasks/data/schema";
 
 export const metadata: Metadata = {
@@ -91,7 +91,7 @@ export default async function TaskPage() {
 //   ];
 // }
 
-// export default async function DemoPage() {
+// export default async function TasksDemoPage() {
 //   const data = await getData();
 
 //   return (
