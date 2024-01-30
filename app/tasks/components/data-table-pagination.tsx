@@ -15,6 +15,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
+// This component is the pagination component for the task table
 interface DataTablePaginationProps<TData> {
   table: Table<TData>;
 }

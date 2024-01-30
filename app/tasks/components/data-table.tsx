@@ -28,6 +28,7 @@ import {
 import { DataTablePagination } from "@/app/tasks/components/data-table-pagination";
 import { DataTableToolbar } from "@/app/tasks/components/data-table-toolbar";
 
+// This component is the main table for the tasks page
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
   data: TData[];

@@ -70,8 +70,8 @@ export const metadata: Metadata = {
   ],
   authors: [
     {
-      name: "shadcn",
-      url: "https://shadcn.com",
+      name: "DrakeAlia",
+      url: "http://www.github.com/DrakeAlia",
     },
   ],
   creator: "shadcn",

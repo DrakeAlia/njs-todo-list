@@ -9,6 +9,8 @@ import { DataTable } from "@/app/tasks/components/data-table";
 import { UserNav } from "@/app/tasks/components/tasks-avatar-nav";
 import { taskSchema } from "@/app/tasks/data/schema";
 
+// This page is a server component and shows information about the tasks.
+
 export const metadata: Metadata = {
   title: "Tasks",
   description: "A task and issue tracker build using Tanstack Table.",
@@ -30,7 +32,7 @@ export default async function TaskPage() {
 
   return (
     <>
-      <div className="md:hidden">
+      {/* <div className="md:hidden">
         <Image
           src="/tasks-light.png"
           width={1280}
@@ -45,8 +47,8 @@ export default async function TaskPage() {
           alt="Playground"
           className="hidden dark:block"
         />
-      </div>
-      <div className="hidden h-full flex-1 flex-col space-y-8 p-8 md:flex">
+      </div> */}
+      <div className="h-full flex-1 flex-col space-y-8 p-8 md:flex">
         <div className="flex items-center justify-between space-y-2">
           <div>
             <h2 className="text-2xl font-bold tracking-tight">Welcome back!</h2>

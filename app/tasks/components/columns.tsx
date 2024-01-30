@@ -8,6 +8,8 @@ import { Task } from "../data/schema";
 import { DataTableRowActions } from "./data-table-actions";
 import { DataTableColumnHeader } from "./data-table-header";
 
+// This component is the main table for the tasks page
+
 export const columns: ColumnDef<Task>[] = [
   {
     id: "select",

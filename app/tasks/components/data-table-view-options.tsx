@@ -13,6 +13,7 @@ import {
   DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
 
+// This component is the view options dropdown menu in the task table toolbar
 interface DataTableViewOptionsProps<TData> {
   table: Table<TData>;
 }

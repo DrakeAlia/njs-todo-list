@@ -10,6 +10,8 @@ import { DataTableViewOptions } from "@/app/tasks/components/data-table-view-opt
 import { priorities, statuses } from "../data/data";
 import { DataTableFacetedFilter } from "./data-table-facted-filter";
 
+
+// This component is the toolbar for the task table. It contains the filter input and the filter buttons
 interface DataTableToolbarProps<TData> {
   table: Table<TData>;
 }
