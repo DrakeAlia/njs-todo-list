@@ -6,7 +6,9 @@ export const siteConfig = {
     "Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.",
   links: {
     twitter: "https://twitter.com/drake___alia",
+    twitter2: "https://twitter.com/shadcn",
     github: "http://www.github.com/DrakeAlia",
+    github2: "http://www.github.com/DrakeAlia/njs-todo-list",
   },
 };
 
