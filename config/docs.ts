@@ -5,7 +5,7 @@ interface DocsConfig {
   sidebarNav: SidebarNavItem[];
 }
 
-// 
+// This is the configuration for the documentation site for the main navigation and sidebar navigation.
 export const docsConfig: DocsConfig = {
   mainNav: [
     {

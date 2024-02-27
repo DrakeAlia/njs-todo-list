@@ -12,7 +12,7 @@ import {
 } from "@radix-ui/react-icons";
 import { useTheme } from "next-themes";
 
-import { docsConfig } from "@/app/config/docs";
+import { docsConfig } from "@/config/docs";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import {
@@ -23,7 +23,7 @@ import {
   CommandItem,
   CommandList,
   CommandSeparator,
-} from "./command";
+} from "./ui/command";
 
 // Command menu for searching documentation in the navbar with keyboard shortcut, github link, x link and theme switcher
 

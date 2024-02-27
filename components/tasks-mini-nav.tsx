@@ -15,9 +15,9 @@ const examples = [
   },
 ];
 
-interface MiniNavProps extends React.HTMLAttributes<HTMLDivElement> {}
+interface TasksMiniNavProps extends React.HTMLAttributes<HTMLDivElement> {}
 
-export function MiniNav({ className, ...props }: MiniNavProps) {
+export function TasksMiniNav({ className, ...props }: TasksMiniNavProps) {
   const pathname = usePathname();
 
   return (

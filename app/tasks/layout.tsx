@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { cn } from "@/lib/utils";
 import { Announcement } from "@/components/ui/announcement";
-import { MiniNav } from "@/components/ui/mini-nav";
+import { TasksMiniNav } from "@/components/tasks-mini-nav";
 import {
   PageActions,
   PageHeader,
@@ -54,7 +54,7 @@ export default function ExamplesLayout({ children }: ExamplesLayoutProps) {
           </PageActions>
         </PageHeader>
         <section>
-          <MiniNav />
+          <TasksMiniNav />
           <div className="overflow-hidden rounded-[0.5rem] border bg-background shadow-md md:shadow-xl">
             {children}
           </div>

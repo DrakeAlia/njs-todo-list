@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "DrakeAlia/Todo",
-  url: "https://ui.shadcn.com",
+  url: "https://njs-todo-list.vercel.app/",
   description:
-    "Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.",
+    "A simple todo list app built with Next.js and shadcn ui components.",
   links: {
     twitter: "https://twitter.com/drake___alia",
     twitter2: "https://twitter.com/shadcn",
