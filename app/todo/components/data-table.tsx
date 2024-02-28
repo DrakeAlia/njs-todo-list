@@ -1,6 +1,8 @@
 "use client";
 
 import * as React from "react";
+import { DataTablePagination } from "@/app/todo/components/data-table-pagination";
+import { DataTableToolbar } from "@/app/todo/components/data-table-toolbar";
 import {
   ColumnDef,
   ColumnFiltersState,
@@ -15,7 +17,6 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-
 import {
   Table,
   TableBody,
@@ -25,8 +26,6 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-import { DataTablePagination } from "@/app/tasks/components/data-table-pagination";
-import { DataTableToolbar } from "@/app/tasks/components/data-table-toolbar";
 
 // This component is the main table for the tasks page
 interface DataTableProps<TData, TValue> {

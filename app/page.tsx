@@ -1,24 +1,22 @@
 import Link from "next/link";
 
-import { siteConfig } from "../config/site";
 import { cn } from "@/lib/utils";
-// import { Announcement } from "@/components/ui/announcement";
 import { Icons } from "@/components/ui/icons";
+import { siteConfig } from "../config/site";
+import { buttonVariants } from "@/components/ui/button";
 import {
   PageActions,
   PageHeader,
   PageHeaderDescription,
   PageHeaderHeading,
 } from "@/components/ui/page-header";
-import { buttonVariants } from "@/components/ui/button";
-import TaskPage from "./tasks/page";
+import TaskPage from "./todo/page";
 
 // Main page for the site
 export default function IndexPage() {
   return (
-    <div className="container relative">
+    <div className="container relative pb-10">
       <PageHeader>
-        {/* <Announcement /> */}
         <PageHeaderHeading>My Tasks</PageHeaderHeading>
         <PageHeaderDescription>
           Here are my tasks to complete and do for this month. Filter through

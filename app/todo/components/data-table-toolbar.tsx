@@ -5,7 +5,7 @@ import { Table } from "@tanstack/react-table";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { DataTableViewOptions } from "@/app/tasks/components/data-table-view-options";
+import { DataTableViewOptions } from "@/app/todo/components/data-table-view-options";
 
 import { priorities, statuses } from "../../../data/data";
 import { DataTableFacetedFilter } from "./data-table-facted-filter";

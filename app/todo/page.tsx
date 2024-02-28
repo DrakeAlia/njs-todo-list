@@ -3,13 +3,12 @@ import path from "path";
 import { Metadata } from "next";
 import { z } from "zod";
 
-import { columns } from "@/app/tasks/components/columns";
-import { DataTable } from "@/app/tasks/components/data-table";
-import { UserNav } from "@/app/tasks/components/tasks-avatar-nav";
+import { columns } from "@/app/todo/components/columns";
+import { DataTable } from "@/app/todo/components/data-table";
+import { UserNav } from "@/app/todo/components/user-nav";
 import { taskSchema } from "@/data/schema";
 
 // This page is a server component and shows information about the tasks.
-
 export const metadata: Metadata = {
   title: "Tasks",
   description: "A task and issue tracker build using Tanstack Table.",
