@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "DrakeAlia/Todo",
+  name: "Todo",
   url: "https://njs-todo-list.vercel.app/",
   description:
     "A simple todo list app built with Next.js and shadcn ui components.",
